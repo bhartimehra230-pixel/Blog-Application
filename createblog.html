@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog - MyBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">My<span>Blog.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<main class="create-section">
+
+    <div class="create-heading">
+        <span class="tag">SHARE YOUR IDEAS</span>
+        <h1>Create a New Blog</h1>
+        <p>Write something inspiring and share it with the world.</p>
+    </div>
+
+
+<form class="create-form" id="blogForm">
+
+    <label for="blogTitle">Blog Title</label>
+    <input type="text" id="blogTitle" placeholder="Enter your blog title" required>
+
+    <label for="blogCategory">Blog Category</label>
+    <select id="blogCategory" required>
+        <option value="">Select Category</option>
+        <option>Technology</option>
+        <option>Creativity</option>
+        <option>Lifestyle</option>
+        <option>Education</option>
+        <option>Inspiration</option>
+    </select>
+
+    <label for="blogImage">Featured Image URL</label>
+    <input type="url" id="blogImage" placeholder="Paste image URL" required>
+
+    <label for="blogContent">Blog Description</label>
+    <textarea id="blogContent" placeholder="Write your blog content here..." required></textarea>
+
+    <div class="create-buttons">
+        <button type="submit">Publish Blog</button>
+        <button type="reset" class="reset-btn">Clear Form</button>
+    </div>
+
+</form>
+
+
+
+</main>
+
+<footer>
+    <h2>My<span>Blog.</span></h2>
+    <p>Share your thoughts. Inspire the world.</p>
+    <p class="copyright">© 2026 MyBlog. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
